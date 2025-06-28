@@ -16,10 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // --- LÓGICA CORRIGIDA PARA MUDANÇA DE COR COM SCROLL ---
+    // --- LÓGICA PARA MUDANÇA DE COR COM SCROLL ---
 
     const corInicial = { r: 248, g: 249, b: 250 }; // Cor do :root (#f8f9fa)
-    const corFinal = { r: 221, g: 226, b: 231 };   // Cor de destino (#dde2e7)
+    
+    // COR FINAL ALTERADA para um tom mais evidente e elegante (lavanda)
+    const corFinal = { r: 230, g: 224, b: 248 };   // Cor de destino (#e6e0f8)
 
     window.addEventListener('scroll', () => {
         // Altura total da página rolável
