@@ -102,26 +102,21 @@
         </section>
 
         <section id="contact" class="contact-section">
-    <div class="container animate-on-scroll">
-        <h2 class="section-title">Vamos Conversar?</h2>
-        <p class="contact-subtitle">Estou sempre aberto para novos projetos e colaborações. Preencha o formulário abaixo e retornarei o mais breve possível.</p>
-
-        <form class="contact-form" name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
+            <div class="container animate-on-scroll">
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <p class="contact-subtitle">Estou sempre aberto para novos projetos e colaborações. Preencha o formulário abaixo e retornarei o mais breve possível.</p>
+                
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/obrigado.html">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <textarea name="message" placeholder="Sua Mensagem" rows="6" required></textarea>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                </form>
             </div>
-            <textarea name="message" placeholder="Sua Mensagem" rows="6" required></textarea>
-            <button type="submit" class="cta-button">Enviar Mensagem</button>
-            <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/obrigado.html">
-    <input type="hidden" name="form-name" value="contact" />
-    ... (o restante do seu formulário) ...
-</form>
-        </form>
-    </div>
-</section>
+        </section>
 
     </main>
 
