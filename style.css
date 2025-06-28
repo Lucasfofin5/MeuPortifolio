@@ -4,6 +4,8 @@
     --bg-content: #ffffff;
     --text-color: #212529;
     --primary-color: #007bff;
+    /* Adicionando a nova cor roxa para o botão */
+    --purple-color: #8A2BE2; /* Um tom de roxo bonito (BlueViolet) */
     --shadow-color: rgba(0, 0, 0, 0.05);
     --border-radius: 12px;
     --font-family: 'Poppins', sans-serif;
@@ -13,7 +15,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Esconde o cursor padrão em todo o site */
     cursor: none;
     scroll-behavior: smooth;
 }
@@ -33,7 +34,7 @@ body {
     height: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 50%;
-    pointer-events: none; /* Garante que o cursor não interfira com cliques */
+    pointer-events: none;
     transform: translate(-50%, -50%);
     transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-width 0.3s ease;
     z-index: 9999;
@@ -285,7 +286,7 @@ body {
     content: '+';
 }
 
-/* 8. Detalhe #2: Estilos da Seção de Contato */
+/* 8. Estilos da Seção de Contato */
 .contact-section {
     background-color: var(--bg-content);
 }
@@ -364,7 +365,53 @@ body {
     transform: translateY(0);
 }
 
-/* 11. RESPONSIVIDADE */
+/* 11. ESTILOS REFINADOS PARA A PÁGINA DE AGRADECIMENTO */
+.obrigado-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    /* Remove o fundo branco para mostrar o degradê da rolagem */
+}
+
+.obrigado-page .section-title {
+    margin-bottom: 1rem;
+}
+
+.obrigado-page p {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+}
+
+.button-obrigado {
+    /* Estilo base do botão */
+    display: inline-block;
+    padding: 14px 28px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+
+    /* Estilo Roxo Personalizado */
+    background-color: rgba(138, 43, 226, 0.5); /* Roxo com 50% de transparência */
+    border: 2px solid var(--purple-color);
+    color: white;
+}
+
+.button-obrigado:hover {
+    background-color: var(--purple-color); /* Roxo sólido no hover */
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4);
+}
+
+
+/* 12. RESPONSIVIDADE */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -376,22 +423,10 @@ body {
     .form-group {
         flex-direction: column;
     }
-    /* Esconde o cursor customizado em telas pequenas para não atrapalhar a usabilidade touch */
     .custom-cursor {
         display: none;
     }
     * {
-        cursor: auto; /* Restaura o cursor padrão em mobile */
+        cursor: auto;
     }
-}
-
-/* 12. ESTILOS PARA A PÁGINA DE AGRADECIMENTO */
-.obrigado-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alinha verticalmente */
-    align-items: center;    /* Alinha horizontalmente */
-    text-align: center;
-    min-height: 100vh;      /* Faz a seção ocupar a tela inteira */
-    background-color: var(--bg-content); /* Fundo branco para esta página específica */
 }
