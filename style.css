@@ -5,7 +5,7 @@
     --text-color: #212529;
     --primary-color: #007bff;
     --shadow-color: rgba(0, 0, 0, 0.05);
-    --border-radius: 12px; /* Nossa borda arredondada padrão! */
+    --border-radius: 12px;
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; /* Para a rolagem suave dos links */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
     background-color: var(--bg-main);
     color: var(--text-color);
     line-height: 1.6;
+    /* Adicionado para a transição suave de cor */
     transition: background-color 0.5s ease;
 }
 
@@ -78,7 +79,7 @@ body {
     justify-content: center;
     text-align: center;
     min-height: 80vh;
-    padding-top: 80px; /* Para não ficar atrás da navbar */
+    padding-top: 80px;
 }
 
 .hero h1 {
@@ -130,7 +131,7 @@ body {
     background-color: var(--bg-content);
     border-radius: var(--border-radius);
     box-shadow: 0 4px 12px var(--shadow-color);
-    overflow: hidden; /* Garante que a imagem respeite a borda arredondada */
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -142,7 +143,7 @@ body {
 .project-card img {
     width: 100%;
     height: 220px;
-    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+    object-fit: cover;
     display: block;
 }
 
@@ -187,7 +188,6 @@ body {
     background-color: var(--primary-color);
     color: white;
 }
-
 
 /* 6. SEÇÃO SOBRE MIM */
 .about-section {
