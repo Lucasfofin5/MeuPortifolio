@@ -190,7 +190,7 @@ body {
 
 /* 6. SEÇÃO SOBRE MIM */
 .about-section {
-    background-color: var(--bg-content);
+    /* A linha 'background-color' foi removida daqui para revelar o degradê do body */
     text-align: center;
 }
 
@@ -202,7 +202,7 @@ body {
 
 /* 7. NOVA SEÇÃO DE METODOLOGIA (ACORDEÃO) */
 .methodology-section {
-    background-color: var(--bg-main);
+    /* A linha 'background-color' foi removida daqui também */
 }
 
 .accordion {
@@ -214,7 +214,7 @@ body {
 }
 
 .accordion-item {
-    background-color: var(--bg-content);
+    background-color: var(--bg-content); /* Estes cards continuarão brancos */
     border-radius: var(--border-radius);
     box-shadow: 0 4px 12px var(--shadow-color);
     transition: all 0.3s ease;
@@ -253,19 +253,18 @@ body {
     color: #555;
 }
 
-/* EFEITO HOVER PARA ABRIR O ACORDEÃO */
 .accordion-item:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .accordion-item:hover .accordion-content {
-    max-height: 300px; /* Altura suficiente para o conteúdo caber */
+    max-height: 300px;
     padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .accordion-item:hover .accordion-title::after {
     transform: rotate(45deg);
-    content: '+'; /* Mantém o + mas o rotaciona para parecer um 'x' */
+    content: '+';
 }
 
 
