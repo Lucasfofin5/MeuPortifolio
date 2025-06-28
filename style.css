@@ -384,3 +384,14 @@ body {
         cursor: auto; /* Restaura o cursor padrão em mobile */
     }
 }
+
+/* 12. ESTILOS PARA A PÁGINA DE AGRADECIMENTO */
+.obrigado-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center;    /* Alinha horizontalmente */
+    text-align: center;
+    min-height: 100vh;      /* Faz a seção ocupar a tela inteira */
+    background-color: var(--bg-content); /* Fundo branco para esta página específica */
+}
